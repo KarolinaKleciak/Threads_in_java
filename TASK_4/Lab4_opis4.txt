@@ -1,0 +1,13 @@
+Dla tablicy typu int:
+Wraz ze wzrostem liczby wątków do pewnego punktu czas średni działania programu maleje, co sugeruje skuteczne wykorzystanie wielowątkowości. Jednakże po osiągnięciu około 5-8 wątków, korzyści z dodatkowych wątków zaczynają maleć, a czas wykonania może się nawet wydłużyć. Dla tego konkretnego procesora AMD Ryzen 7 6800HS z 8 rdzeniami, optymalna liczba wątków wydaje się oscylować w okolicach 5-8, zgodnie z liczbą dostępnych rdzeni procesora. 
+(czasy wątków w porównaniu do liczby rdzeni są optymalne).
+
+Dla tablicy typu double:
+Dla procesora AMD Ryzen 7 6800HS z 8 rdzeniami, czas średni działania programu zwykle maleje wraz ze wzrostem liczby wątków do około 5-8, odpowiadających liczbie rdzeni. Po tej liczbie korzyści z dodatkowych wątków maleją, a czas wykonania stabilizuje się lub nieznacznie wzrasta. Wniosek: istnieje optymalna liczba wątków dla danego procesora, która maksymalizuje wydajność programu.
+
+(Dodając: po usunięciu wszystkich komentarzy wyświetlających informację na ekranie oczywiście czas działania proramu jest krótszy).
+
+Nazwa/Typ procesora: AMD Ryzen 7 6800HS with Radeon Graphics 3.20GHz
+Liczba rdzeni: 8
+Nazwa systemu operacyjnego: Windows 11 Home 23H2
+Rozmiar pamięci RAM: 48.0 GB (47.2 GB usable)
